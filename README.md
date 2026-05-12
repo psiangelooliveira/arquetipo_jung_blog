@@ -1,0 +1,1 @@
+# arquetipo_jung_blog
