@@ -819,9 +819,7 @@
         else { showScreen(loading); setTimeout(() => { finishQuiz(); showScreen(result); }, 2100); }
       });
       restartBtn.addEventListener('click', () => { answers = []; currentQ = 0; showScreen(coverScreen); });
-      exitBtn.addEventListener('click', () => {
-        window.parent.postMessage('closeQuizJungModal', '*'); });
-      });
+      exitBtn.addEventListener('click', () => { window.parent.postMessage('closeQuizJungModal', '*'); });
       idealBtn.addEventListener('click', () => idealModal.classList.add('show'));
       closeModal.addEventListener('click', () => idealModal.classList.remove('show'));
       idealModal.addEventListener('click', e => { if (e.target === idealModal) idealModal.classList.remove('show'); });
