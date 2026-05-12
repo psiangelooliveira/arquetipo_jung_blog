@@ -820,7 +820,7 @@
       });
       restartBtn.addEventListener('click', () => { answers = []; currentQ = 0; showScreen(coverScreen); });
       exitBtn.addEventListener('click', () => {
-        window.location.href = 'https://psiangelooliveira.com.br/modo-aviao/';
+        window.parent.postMessage('closeQuizJungModal', '*'); });
       });
       idealBtn.addEventListener('click', () => idealModal.classList.add('show'));
       closeModal.addEventListener('click', () => idealModal.classList.remove('show'));
